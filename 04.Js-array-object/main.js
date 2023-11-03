@@ -41,8 +41,36 @@
 
 //--------TASK 5
 
-const originalArray = [1, 2, 3, 4];
-newArray = [];
-for (i=0; i<4; i++){
-    
-}
+// const originalArray = [1, 2, 3, 4];
+// newArray = [];
+// let n = 10;
+// for (i=0; i<originalArray.length; i++){
+//     for(a=1; a<=n; a++){
+//         newArray.push(originalArray[i]);
+//     }
+// }
+
+// console.log(newArray);
+
+//-------TASK 6
+// const num = [12, 45, 6, 78, 34, 99, 23, 88, 99,122,45,36,37,94];
+// newArrayEven = [];
+// newArrayOdd= [];
+
+// for (i=0; i< num.length; i++){
+//     if (num[i]%2 === 0){
+//         newArrayEven.push(num[i])
+//     }else{
+//         newArrayOdd.push(num[i])
+//     }
+// }
+// console.log( newArrayEven);
+// console.log( newArrayOdd);
+
+//-------TASK 7
+// const originalArray = [1, 2, 3, 4, 5];
+// reverseArray = [];
+// for (i = originalArray.length - 1; i >= 0; i--) {
+//   reverseArray.push(originalArray[i]);
+// }
+// console.log(reverseArray);
