@@ -20,9 +20,3 @@
 // neçə dəfə təkrarlanıbsa onun sayısını göstərin.
 // Nəticə: 3
 // console.log(charCount('w3rescource.com', 'c'));
-
-let charCount = (resourse, char) => {
-    let count = 0;
-    for 
-
-};
