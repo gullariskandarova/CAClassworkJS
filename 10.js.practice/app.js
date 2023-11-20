@@ -51,8 +51,8 @@ const person = {
   },
 };
 
-person adlı object-dən firstName-i, languageInfo-dan eng və rus property-ni destructing edin, əlavə olaraq 
-personda yerdə qalan bütün property-ləri otherInfo adı altında rest operatoru ilə bir dəyişənə çıxarın.
+// person adlı object-dən firstName-i, languageInfo-dan eng və rus property-ni destructing edin, əlavə olaraq 
+// personda yerdə qalan bütün property-ləri otherInfo adı altında rest operatoru ilə bir dəyişənə çıxarın.
 
 console.log(eng); // "Advance"
 console.log(otherInfo); // {lastName: 'Doe', city: 'Ganja', website: 'code.edu.az'}
