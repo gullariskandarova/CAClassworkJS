@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid rgb(199, 199, 199);
+        padding: 7px 20px;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .buttons {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <button class="ascending">sort by ascenting</button>
+      <button class="descending">sort by descenting</button>
+      <button class="name">sort by name</button>
+      <input type="search" placeholder="search by name">
+    </div>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>FirstName, LastName</th>
+            <th>Email</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="./table.js"></script>
+  </body>
+</html>
