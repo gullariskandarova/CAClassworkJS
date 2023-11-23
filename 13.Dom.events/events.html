@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        .todo{
+            width: 20rem;
+            padding: 10px 5px;
+            border-radius: 8px;
+            outline: none;
+        }
+        .addButton{
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: 3px solid rgb(118, 193, 255);
+            border-radius: 8px;
+           
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" placeholder="add todo..." class="todo" />
+      <button class="addButton">ADD</button>
+      <ul class="list"></ul>
+      <script src="./events.js"></script>
+    </div>
+  </body>
+</html>
