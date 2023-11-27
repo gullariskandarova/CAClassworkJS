@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          .container {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+          }
+
+          header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+          }
+
+          nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+          }
+
+          nav li {
+            display: inline;
+            margin-right: 10px;
+            padding: 10px;
+          }
+
+          nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
+          }
+
+          nav a:hover {
+            color: gold;
+          }
+
+          form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            width: 500px;
+          }
+
+          label {
+            display: block;
+            margin-bottom: 8px;
+          }
+
+          input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+          }
+
+          button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+
+          button:hover {
+            background-color: #0056b3;
+          }
+        </style>
+      </head>
+      <body>
+        <header>
+          <h1>Storage</h1>
+          <nav>
+            <ul>
+              <li><a href="./storage.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <form action="" id="form">
+            <div>
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" />
+            </div>
+            <div>
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" />
+            </div>
+            <div>
+              <label for="address">Address</label>
+              <input type="text" id="address" />
+            </div>
+            <button id="createButton" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <script src="./storage.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
