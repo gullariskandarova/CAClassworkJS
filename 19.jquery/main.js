@@ -13,7 +13,7 @@ $(".add").on("click", function () {
 
     text.addEventListener("click", function () {
       this.remove();
-      
+      arr.find(item=> item)
     });
   }
 });
@@ -25,7 +25,7 @@ function forArr(array) {
     $(".text").append(text);
     text.addEventListener("click", function () {
       this.remove();
-      localStorage.removeItem(this);
+      
     });
   });
 }
