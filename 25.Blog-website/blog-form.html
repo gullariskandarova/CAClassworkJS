@@ -41,12 +41,22 @@
       form{
         display: flex;
         flex-direction: column;
+       gap: 10px;
+      }
+      form input, form select{
+        padding: 5px;
       }
       .form{
         width: 60%;
+        padding: 50px 0;
       }
       .form h1{
         text-align: center;
+      }
+      .addNewBlog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     </style>
 </head>
@@ -59,7 +69,7 @@
             </div>
             <nav>
               <ul>
-                <li><a href="./blog.html"></a>Home</li>
+                <li><a href="./blog.html">Home</a></li>
                 <li><a href="./blog-form.html">New Blog</a></li>
               </ul>
             </nav>
@@ -68,20 +78,22 @@
       </header>
       <section id="form">
         <div class="container">
+           <div class="addNewBlog">
             <div class="form">
-                <h1>Add a NEW Blog</h1>
-                <form action="">
-                    <label for="">Blog title:</label>
-                    <input type="text">
-                    <label for="">Blog body:</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <label for="">Blog author:</label>
-                    <select name="" id="">
-                        <option value="">select author</option>
-                        <option value="">select </option>
-                    </select>
-                </form>
-            </div>
+              <h1>Add a NEW Blog</h1>
+              <form action="">
+                  <label for="">Blog title:</label>
+                  <input type="text">
+                  <label for="">Blog body:</label>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <label for="">Blog author:</label>
+                  <select name="" id="">
+                      <option value="">select author</option>
+                      <option value="">select </option>
+                  </select>
+              </form>
+          </div>
+           </div>
         </div>
       </section>
 </body>
