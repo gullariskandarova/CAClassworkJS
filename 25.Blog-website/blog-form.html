@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script defer src="./blog-form.js"></script>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        outline: none;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+      header{
+        background-color: rgb(10, 145, 255);
+        padding: 20px 0px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header ul {
+        display: flex;
+        gap: 1.5rem;
+      }
+      .header ul a{
+        color: black;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+      }
+      .form{
+        width: 60%;
+      }
+      .form h1{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <h1>The Blog Website</h1>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="./blog.html"></a>Home</li>
+                <li><a href="./blog-form.html">New Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section id="form">
+        <div class="container">
+            <div class="form">
+                <h1>Add a NEW Blog</h1>
+                <form action="">
+                    <label for="">Blog title:</label>
+                    <input type="text">
+                    <label for="">Blog body:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="">Blog author:</label>
+                    <select name="" id="">
+                        <option value="">select author</option>
+                        <option value="">select </option>
+                    </select>
+                </form>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
