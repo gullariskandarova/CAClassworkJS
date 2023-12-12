@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script defer src="./login.js"></script>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 20rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loginPage">
+      <h1>My Website</h1>
+      <div class="signUp">
+        <p>Login</p>
+      </div>
+      <div class="form">
+        <form action="">
+          <label for="email">Emai:</label>
+          <input id="email" type="email" placeholder="Emai" required />
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <button id="submitBtn" type="submit">Sign Up</button>
+        </form>
+        <a href="./signup.html">Sign up</a>
+      </div>
+    </div>
+  </body>
+</html>
