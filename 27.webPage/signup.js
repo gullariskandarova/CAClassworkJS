@@ -3,7 +3,7 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const submitBtn = document.querySelector("#submitBtn");
 const form = document.querySelector("form");
-
+const pass = document.querySelector(".fa-eye");
 let userData = JSON.parse(localStorage.getItem("newUser")) ?? [];
 form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -26,5 +26,17 @@ form.addEventListener("submit", function (event) {
     window.location = "login.html";
   } else {
     window.alert("Bele istifadeci qeydiyyat kecib");
+  }
+});
+
+pass.addEventListener("click", function () {
+  
+  if (password.type === "password") {
+    password.type = "text";
+    this.className = "fa-solid fa-eye-slash"
+  } else {
+    password.type = "password";
+    this.className = "fa-solid fa-eye"
+
   }
 });
