@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  background-color: bisque;
+  padding: 20px;
+  position: fixed;
+  width: 100vw;
+}
+header .container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#cards {
+  height: 100vh;
+  padding-top: 100px;
+}
+#cards .container .cards {
+  display: flex;
+  gap: 1.5rem;
+}
+#cards .container .cards .card {
+  width: 20rem;
+  height: 20rem;
+}
+#cards .container .cards .card img {
+  width: 80%;
+}/*# sourceMappingURL=fav.css.map */
