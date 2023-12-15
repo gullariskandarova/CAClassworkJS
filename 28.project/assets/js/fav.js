@@ -1,5 +1,5 @@
 const cards = document.querySelector(".cards");
-
+const BASE_URL = "http://localhost:8000/users";
 const fav = JSON.parse(localStorage.getItem("fav"));
 
 function drawCard(arr) {
@@ -11,7 +11,7 @@ function drawCard(arr) {
     <div class="card-body">
       <h5 class="card-title">${element.name}</h5>
       <p class="card-text">${element.surname}</p>
-      <a href="#" class="btn btn-danger">delete</a>
+      <button class="btn btn-danger" onclick = deleteFav()>delete</button>
     </div>
     `;
     cards.append(card);
@@ -19,3 +19,9 @@ function drawCard(arr) {
 }
 
 drawCard(fav);
+function deleteFav(id) {
+  if (confirm("Are you sure?")) {
+    let obj = fav.find((item) => item.id === id);
+    obj.remove();
+  }
+}
